@@ -76,10 +76,6 @@ allow it once: right-click it, **Properties** → **Permissions** → tick **Is 
 
 It's optional. Dragging the `Plutonium` folder across yourself is identical.
 
-**Every game at once:** the
-[Treyarch Bundle](https://github.com/Xeptix/ZShare/releases/latest) carries all five ZShare
-ports with this same installer, which asks which of them to install.
-
 You don't need to restart the game to load a script — just end the current game and start
 a new one.
 
@@ -345,6 +341,27 @@ World at War has no GSC compiler, so ZShare T4 is checked against the stock T4 s
 instead — all four maps, since every map carries its own copy of the zombies scripts:
 every function it calls is a real call a zombies script can reach, and every entity field,
 notify, flag and sound alias it borrows exists there.
+
+---
+
+## Ports
+
+| Game | Repo |
+|---|---|
+| Black Ops 4 (T8) | [ZShareT8](https://github.com/Xeptix/ZShareT8) |
+| Black Ops III (T7) | [ZShareT7](https://github.com/Xeptix/ZShareT7) |
+| Black Ops II (T6) | [ZShare](https://github.com/Xeptix/ZShare) |
+| Black Ops (T5) | [ZShareT5](https://github.com/Xeptix/ZShareT5) |
+| World at War (T4) | ZShareT4 — you are here |
+
+Versions are kept in step: the same version number means the same feature set, allowing
+for what each engine can actually do.
+
+**All five in one download.** The [Treyarch
+Bundle](https://github.com/Xeptix/ZShare/releases/latest) carries every game ZShare runs
+on, laid out as each drops in — the `Plutonium` tree for this game and the other two, Black
+Ops III's folders, Black Ops 4's mod folder — with one installer that asks which of them to
+install.
 
 ---
 
