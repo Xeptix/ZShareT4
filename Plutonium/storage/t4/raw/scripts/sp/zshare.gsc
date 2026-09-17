@@ -1,6 +1,6 @@
 /*
 ======================================================================
-    ZSHARE T4 v1.0  --  Weapon sharing for World at War Zombies
+    ZSHARE T4 v1.1  --  Weapon sharing for World at War Zombies
     Plutonium T4
 
     by Xep
@@ -1135,6 +1135,15 @@ zs_trade_do( a, b )
     if ( why != "" )
     {
         b zs_deny( why );
+        return;
+    }
+
+    // The same gun both ways would trade nothing, and Black Ops II refuses
+    // it before anything else. zs_carries_same_family() lets the outgoing
+    // gun through on purpose, so it never catches this one.
+    if ( a_weapon == b_weapon )
+    {
+        b zs_deny( "You already have that weapon" );
         return;
     }
 

@@ -68,7 +68,8 @@ Each one finds Plutonium's folder, shows you what it is about to copy, and asks 
 Linux, `install.sh` looks where Plutonium ends up under Wine or Proton — Steam's
 `compatdata` including a Steam Deck's, Heroic, Lutris, Bottles, plain `~/.wine`, and the
 Flatpak version of each. `install.bat -Yes` and `install.sh --yes` copy without asking, `-Uninstall` / `--uninstall`
-removes what an install put there, and `-Find` / `--find` only shows what it detects.
+removes what an install put there, and `-Find` / `--find` only shows what it detects. When it
+can't find your game, `-To <folder>` / `--to <folder>` points it there.
 
 On a Steam Deck, switch to Desktop Mode and double-click
 **`installer/linux/Install ZShare.desktop`**. KDE will not run a desktop entry until you
@@ -366,6 +367,12 @@ install.
 ---
 
 ## Changelog
+
+### v1.1
+
+- **A trade of two identical guns is refused** — "You already have that weapon" — the way
+  Black Ops II has always refused it. Only the same gun both ways; a plain gun for its
+  Pack-a-Punched version still trades.
 
 ### v1.0
 
