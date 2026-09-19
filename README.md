@@ -368,6 +368,10 @@ install.
 
 ## Changelog
 
+### v1.2
+
+- No changes to this port. The version moves with the other four.
+
 ### v1.1
 
 - **A trade of two identical guns is refused** — "You already have that weapon" — the way

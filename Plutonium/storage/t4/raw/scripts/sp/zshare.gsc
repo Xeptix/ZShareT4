@@ -1,6 +1,6 @@
 /*
 ======================================================================
-    ZSHARE T4 v1.1  --  Weapon sharing for World at War Zombies
+    ZSHARE T4 v1.2  --  Weapon sharing for World at War Zombies
     Plutonium T4
 
     by Xep
